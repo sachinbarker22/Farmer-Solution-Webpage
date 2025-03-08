@@ -1,2 +1,2 @@
-# Farmer's-Solution-Webpage
+# Farmer-Solution-Webpage
 A responsive webpage for farmers
