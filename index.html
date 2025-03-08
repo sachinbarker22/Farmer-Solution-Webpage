@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kumar+One&display=swap"
+        rel="stylesheet">
+    <title>Farmer's Webpage</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="Logo.jpg" alt="Logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#" onclick="openLogin()">Login</a></li>
+            <li><a href="#" onclick="openSignUp()">SignUp</a></li>
+            <li><a href="#" onclick="openContact()">ContactUs</a></li>
+        </ul>
+        <!-- Overlay for Sign Up Modal -->
+<div class="overlay" id="overlay-signup"></div>
+
+<!-- Sign Up Modal -->
+<div class="contact-modal" id="signupModal">
+    <h2>Sign Up</h2>
+
+    <label for="signup-first-name">First Name</label>
+    <input type="text" id="signup-first-name" placeholder="Enter First Name" required>
+
+    <label for="signup-second-name">Middle Name</label>
+    <input type="text" id="signup-second-name" placeholder="Enter Second Name" required>
+
+    <label for="signup-third-name">Last Name</label>
+    <input type="text" id="signup-third-name" placeholder="Enter Third Name" required>
+
+    <label for="signup-email">Email</label>
+    <input type="email" id="signup-email" placeholder="Enter your Email" required>
+
+    <label for="signup-password">Password</label>
+    <input type="password" id="signup-password" placeholder="Enter Password" required>
+
+    <label for="signup-confirm-password">Confirm Password</label>
+    <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+
+    <button onclick="submitSignUp()">Sign Up</button>
+    <button class="close-btn" onclick="closeSignUp()">Close</button>
+</div>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Search Anything">
+            <button class="btn btn-sm" onclick="searchContent()">Search</button>
+        </div>
+    </nav>
+
+    <!-- Your original content remains unchanged -->
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Farmers are the Back-Bone of the Nation!</p>
+                <br>
+                <p class="text-small">Farmers are the backbone of the nation, playing a vital role in sustaining the
+                    economy and ensuring food security. They work tirelessly in fields, enduring harsh weather
+                    conditions, to produce essential crops that feed millions. Agriculture not only provides food but
+                    also supplies raw materials for various industries like textiles, dairy, and biofuel production.
+                    Despite their hard work, many farmers face challenges such as unpredictable weather, low incomes,
+                    and lack of modern technology. Supporting farmers through better policies, fair pricing, and
+                    technological advancements is crucial for the overall development of a nation. A strong agricultural
+                    sector strengthens the economy, promotes rural development, and ensures a stable food supply for
+                    future generations.</p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Videos</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="Agri.jpg" alt="Farmer" heigh="123px">
+            </div>
+        </div>
+    </section>
+
+    <section class="secRight first" id="drought">
+        <div class="para">
+            <p class="sectionTag text-big">Query 1 : Drought</p>
+            <br>
+            <p class="sectionSubTag text-small">Drought is a severe environmental challenge that can be mitigated
+                through a combination of sustainable water management, conservation, and technological advancements.
+                Efficient irrigation techniques like drip irrigation and rainwater harvesting can help optimize water
+                use in agriculture. Reforestation and afforestation improve soil moisture retention, while constructing
+                reservoirs and check dams ensures better water storage. Governments should implement policies promoting
+                water conservation, desalination, and wastewater recycling. Educating communities about responsible
+                water usage and adopting drought-resistant crops can also minimize the impact. Additionally, climate
+                monitoring systems and early warning mechanisms enable better preparedness and response to drought
+                conditions.
+            </p>
+        </div>
+        <div class="thubnail">
+            <img src="drought.jpg" alt="Imagefluid" height="210px" width="300px">
+        </div>
+    </section>
+    <section class="secRight two" id="irrigation">
+        <div class="para">
+            <p class="sectionTag text-big special">Query 2 : Increased-Irrigation-Costs</p>
+            <br>
+            <p class="sectionSubTag text-small second">To reduce increased-irrigation-costs, farmers can adopt
+                cost-effective and efficient irrigation techniques such as drip irrigation and sprinkler systems, which
+                minimize water wastage. Using solar-powered pumps instead of diesel or electric ones can significantly
+                cut energy expenses. Rainwater harvesting and groundwater recharge methods help ensure a steady water
+                supply, reducing dependence on expensive external sources. Government subsidies and financial aid for
+                irrigation infrastructure can also help farmers manage costs. Additionally, promoting water-efficient
+                crops and soil conservation practices like mulching can reduce the frequency of irrigation, making
+                farming more sustainable and affordable.
+            </p>
+        </div>
+
+        <div class="thubnail">
+            <img src="irrigation.jpg" alt="Imagefluid" height="210px" width="300px">
+        </div>
+    </section>
+   
+    
+    <section class="secRight three" id="financial">
+        <div class="para">
+            <p class="sectionTag text-big">Query 3 : Financial Losses and Debt</p>
+            <br>
+            <p class="sectionSubTag text-small">To mitigate financial losses and debt caused by drought, farmers can
+                adopt sustainable farming practices such as crop diversification and drought-resistant crops to ensure
+                steady income. Government support in the form of subsidies, low-interest loans, and crop insurance can
+                help farmers recover from financial setbacks. Encouraging collective farming and cooperatives allows
+                farmers to share resources and reduce individual financial burdens. Implementing efficient water
+                management systems, such as rainwater harvesting and precision irrigation, can lower operational costs.
+                Additionally, alternative income sources like agro-tourism, dairy farming, or poultry can provide
+                financial stability during drought periods. Educating farmers about financial planning, savings, and
+                modern agricultural techniques can further strengthen their resilience against financial crises.
+                Strengthening local markets and improving access to fair pricing for produce can also help farmers get
+                better returns and reduce dependency on loans.
+            </p>
+        </div>
+        <div class="thubnail">
+            <img src="money.jpg" alt="Imagefluid" height="210px" width="300px">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contact Form Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="contact-modal" id="contactModal">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name" id="name">
+        <input type="email" placeholder="Your Email" id="email">
+        <textarea placeholder="Your Problem" id="message"></textarea>
+        <button onclick="submitContact()">Submit</button>
+        <button class="close-btn" onclick="closeContact()">Close</button>
+    </div>
+
+    <script>
+        function openContact() {
+            document.getElementById("contactModal").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeContact() {
+            document.getElementById("contactModal").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function submitContact() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields.");
+            } else {
+                alert("Message sent successfully!");
+                closeContact();
+            }
+        }
+
+
+        function searchContent() {
+    let query = document.getElementById("search").value.toLowerCase();
+
+    if (query.includes("drought")) {
+        document.getElementById("drought").scrollIntoView({ behavior: "smooth" });
+    } else if (query.includes("irrigation")) {
+        document.getElementById("irrigation").scrollIntoView({ behavior: "smooth" });
+    } else if (query.includes("financial")) {
+        document.getElementById("financial").scrollIntoView({ behavior: "smooth" });
+    } else {
+        alert("No matching section found!");
+    }
+}
+
+    </script>
+    
+<!-- Overlay for Login Modal -->
+<div class="overlay" id="overlay-login"></div>
+
+<!-- Login Modal -->
+<div class="contact-modal" id="loginModal">
+    <h2>Login</h2>
+    <label for="login-email">Email</label>
+    <input type="email" id="login-email" placeholder="Enter your email" required>
+
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" placeholder="Enter your password" required>
+
+    <button onclick="submitLogin()">Login</button>
+    <button class="close-btn" onclick="closeLogin()">Close</button>
+</div>
+<style>
+    /* Login Modal Styling */
+#loginModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    color:black;
+    transform: translate(-50%, -50%);
+    background: url("leave.jpg") no-repeat;
+    background-size:cover;
+    padding: 20px;
+    margin:20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10;
+    z-index: 1000;
+    text-align: center;
+    width: 350px;
+}
+    /* Sign Up Modal Styling */
+#signupModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    width: 300px;
+    background: rgb(0, 0, 0) url("leave.jpg") no-repeat;
+    background-size:cover;
+}
+
+#signupModal input {
+    display: block;
+    width: 93%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#signupModal button {
+    background: #4CAF50;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#signupModal .close-btn {
+    background: #e63946;
+}
+
+#overlay-signup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+#loginModal input {
+    display: block;
+    width: 95%;
+    margin: 10px 0px 10px 0px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#loginModal button {
+    background: #4CAF50;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#loginModal .close-btn {
+    background: #e63946;
+}
+
+#overlay-login {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/* Contact Form Modal */
+.contact-modal {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: url("leave.jpg") no-repeat;
+            background-size:cover;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1000;
+            text-align: center;
+            width: 300px;
+        }
+
+        .contact-modal input,
+        .contact-modal textarea {
+            display: block;
+            width: 93%;
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-modal .close-btn {
+            background: #e63946;
+            padding: 5px 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+</style>
+<script>
+    function openSignUp() {
+    document.getElementById("signupModal").style.display = "block";
+    document.getElementById("overlay-signup").style.display = "block";
+}
+
+function closeSignUp() {
+    document.getElementById("signupModal").style.display = "none";
+    document.getElementById("overlay-signup").style.display = "none";
+}
+
+function submitSignUp() {
+    let firstName = document.getElementById("signup-first-name").value;
+    let secondName = document.getElementById("signup-second-name").value;
+    let thirdName = document.getElementById("signup-third-name").value;
+    let email = document.getElementById("signup-email").value;
+    let password = document.getElementById("signup-password").value;
+    let confirmPassword = document.getElementById("signup-confirm-password").value;
+
+    if (firstName === "" || secondName === "" || thirdName === "" || email === "" || password === "" || confirmPassword === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    alert("Sign Up successful!");
+    closeSignUp();
+}
+
+// Close signup modal when clicking outside
+document.getElementById("overlay-signup").addEventListener("click", closeSignUp);
+
+</script>
+<script>
+    function openLogin() {
+    document.getElementById("loginModal").style.display = "block";
+    document.getElementById("overlay-login").style.display = "block";
+}
+
+function closeLogin() {
+    document.getElementById("loginModal").style.display = "none";
+    document.getElementById("overlay-login").style.display = "none";
+}
+
+function submitLogin() {
+    let email = document.getElementById("login-email").value;
+    let password = document.getElementById("login-password").value;
+
+    if (email === "" || password === "") {
+        alert("Please fill in all fields.");
+    } else {
+        alert("Login successful!");
+        closeLogin();
+    }
+}
+
+// Close login modal when clicking outside
+document.getElementById("overlay-login").addEventListener("click", closeLogin);
+
+</script>
+</body>
+
+</html>
