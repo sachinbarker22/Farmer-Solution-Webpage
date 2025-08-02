@@ -3,10 +3,10 @@
 ## 🌾 Project Title
 **Farmer's Solution – A Web-Based Platform for Indian Agriculture**
 
-## 📌 Overview
+## Overview
 This project is a responsive web application designed to assist farmers by providing easy access to crop information, market prices, weather, research papers, and comment sections. The platform aims to bridge the knowledge gap and empower farmers with digital tools.
 
-## 🧠 Objectives
+## Objectives
 - Provide crop and soil guidance based on Indian states.
 - Display real-time vegetable price tags.
 - Share categorized agricultural research papers.
